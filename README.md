@@ -1,9 +1,11 @@
-# n8n-nodes-solar
+# n8n-nodes-solar-test
 
 Solar LLM and Embeddings nodes for n8n, powered by Upstage Solar models.
 
-![Solar Node](https://img.shields.io/npm/v/n8n-nodes-solar)
-![License](https://img.shields.io/npm/l/n8n-nodes-solar)
+![Solar Node](https://img.shields.io/npm/v/n8n-nodes-solar-test)
+![License](https://img.shields.io/npm/l/n8n-nodes-solar-test)
+
+> **Note**: This is a test package based on the original [n8n-nodes-solar](https://github.com/UpstageAI/n8n-nodes-solar) by UpstageAI.
 
 ## Description
 
@@ -40,7 +42,7 @@ This package provides n8n community nodes for integrating with Upstage's Solar L
 
 3. **Install via npm** (alternative):
    ```bash
-   npm install n8n-nodes-solar
+   npm install n8n-nodes-solar-test
    ```
 
 ## Setup
@@ -152,4 +154,4 @@ MIT License - see LICENSE file for details.
 - [Upstage Console](https://console.upstage.ai/)
 - [Solar LLM Documentation](https://developers.upstage.ai/docs/apis/chat)
 - [n8n Community Nodes](https://docs.n8n.io/integrations/community-nodes/)
-- [GitHub Repository](https://github.com/yourusername/n8n-nodes-solar)
+- [GitHub Repository](https://github.com/SuWanKim-code/n8n-nodes-solar)

@@ -21,7 +21,7 @@ export class LmChatModelUpstage implements INodeType {
 		displayName: 'Solar Chat Model',
 		// eslint-disable-next-line n8n-nodes-base/node-class-description-name-miscased
 		name: 'lmChatModelUpstage',
-		icon: 'file:../../assets/icons/upstage_v2.svg',
+		icon: 'file:upstage_v2.svg',
 		group: ['transform'],
 		version: 1,
 		description: 'For advanced usage with an AI chain',

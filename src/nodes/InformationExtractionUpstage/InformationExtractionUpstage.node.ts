@@ -11,7 +11,7 @@ export class InformationExtractionUpstage implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Upstage Information Extraction',
 		name: 'informationExtractionUpstage',
-		icon: 'file:../../assets/icons/upstage_v2.svg',
+		icon: 'file:upstage_v2.svg',
 		group: ['transform', '@n8n/n8n-nodes-langchain'],
 		version: 1,
 		description: 'Extract structured data from documents/images using Upstage Information Extraction',

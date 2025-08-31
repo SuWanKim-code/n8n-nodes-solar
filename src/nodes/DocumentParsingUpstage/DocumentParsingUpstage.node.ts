@@ -12,7 +12,7 @@ export class DocumentParsingUpstage implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Upstage Document Parsing',
 		name: 'documentParsingUpstage',
-		icon: 'file:../../assets/icons/upstage_v2.svg',
+		icon: 'file:upstage_v2.svg',
 		group: ['transform', '@n8n/n8n-nodes-langchain'],
 		version: 1,
 		description: 'Convert documents into structured HTML/Markdown using Upstage Document Parse',

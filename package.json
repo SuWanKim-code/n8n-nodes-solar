@@ -1,12 +1,12 @@
 {
-  "name": "n8n-nodes-solar",
-  "version": "0.3.4",
-  "description": "Solar LLM and Embeddings nodes for n8n",
+  "name": "n8n-nodes-solar-test",
+  "version": "0.1.0",
+  "description": "Solar LLM and Embeddings nodes for n8n (Test Package)",
   "license": "MIT",
-  "homepage": "https://github.com/ehpyeon/n8n-nodes-solar",
+  "homepage": "https://github.com/SuWanKim-code/n8n-nodes-solar",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ehpyeon/n8n-nodes-solar.git"
+    "url": "git+https://github.com/SuWanKim-code/n8n-nodes-solar.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -74,11 +74,11 @@
     "n8n-workflow": ">=1.0.0"
   },
   "author": {
-    "name": "Euihyeon Pyeon",
-    "email": "euihyeon.pyeon@gmail.com"
+    "name": "SuWan Kim",
+    "email": "suwan.kim@example.com"
   },
   "bugs": {
-    "url": "https://github.com/ehpyeon/n8n-nodes-solar/issues"
+    "url": "https://github.com/SuWanKim-code/n8n-nodes-solar/issues"
   },
   "dependencies": {
     "@types/lodash": "^4.17.20",

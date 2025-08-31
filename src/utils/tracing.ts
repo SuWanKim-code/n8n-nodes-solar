@@ -14,7 +14,13 @@ export function createN8nLlmTracing(
   try {
     return new N8nLlmTracing(context, options);
   } catch (error) {
-    console.warn('Failed to create N8nLlmTracing:', error);
+    try {
+      if (typeof console !== 'undefined' && console.warn) {
+        console.warn('Failed to create N8nLlmTracing:', error);
+      }
+    } catch (consoleError) {
+      // 로깅 실패 시 무시
+    }
     return null;
   }
 }
@@ -26,7 +32,13 @@ export function createN8nLlmFailedAttemptHandler(context: ISupplyDataFunctions) 
   try {
     return makeN8nLlmFailedAttemptHandler(context);
   } catch (error) {
-    console.warn('Failed to create failure handler:', error);
+    try {
+      if (typeof console !== 'undefined' && console.warn) {
+        console.warn('Failed to create failure handler:', error);
+      }
+    } catch (consoleError) {
+      // 로깅 실패 시 무시
+    }
     return undefined;
   }
 }
@@ -38,7 +50,13 @@ export function getHttpProxyAgent() {
   try {
     return getHttpProxyAgentImpl();
   } catch (error) {
-    console.warn('Failed to get HTTP proxy agent:', error);
+    try {
+      if (typeof console !== 'undefined' && console.warn) {
+        console.warn('Failed to get HTTP proxy agent:', error);
+      }
+    } catch (consoleError) {
+      // 로깅 실패 시 무시
+    }
     return undefined;
   }
 }
@@ -50,7 +68,13 @@ export function getConnectionHintNoticeField(connectionTypes: any[]) {
   try {
     return getConnectionHintNoticeFieldImpl(connectionTypes);
   } catch (error) {
-    console.warn('Failed to get connection hint notice field:', error);
+    try {
+      if (typeof console !== 'undefined' && console.warn) {
+        console.warn('Failed to get connection hint notice field:', error);
+      }
+    } catch (consoleError) {
+      // 로깅 실패 시 무시
+    }
     return null;
   }
 }

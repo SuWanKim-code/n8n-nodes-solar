@@ -11,7 +11,7 @@ export class EmbeddingsUpstage implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Upstage Embeddings',
 		name: 'embeddingsUpstage',
-		icon: 'file:../../assets/icons/upstage_v2.svg',
+		icon: 'file:upstage_v2.svg',
 		group: ['transform'],
 		version: 1,
 			description: 'Generate embeddings using Upstage Solar embedding models. Supports up to 100 strings per request with max 204,800 total tokens. Each text should be under 4000 tokens (optimal: under 512 tokens).',

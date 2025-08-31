@@ -92,8 +92,14 @@ export class N8nLlmTracing extends BaseCallbackHandler {
 
   // Placeholder for logAiEvent - community nodes don't have access to this utility
   private logAiEvent(eventName: string, data: any) {
-    // In community nodes, we can only log to console
-    console.log(`🔍 AI Event: ${eventName}`, JSON.stringify(data, null, 2));
+    // n8n 환경에서 안전하게 로깅
+    try {
+      if (typeof console !== 'undefined' && console.log) {
+        console.log(`🔍 AI Event: ${eventName}`, JSON.stringify(data, null, 2));
+      }
+    } catch (error) {
+      // 로깅 실패 시 무시
+    }
   }
 
   async handleLLMEnd(output: LLMResult, runId: string) {

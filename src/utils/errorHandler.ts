@@ -45,13 +45,20 @@ export function logError(
 	const errorMessage = error instanceof Error ? error.message : 'Unknown error';
 	const errorCode = isApiError(error) ? error.code : ERROR_CODES.API_REQUEST_FAILED;
 	
-	console.error(`🚫 ${context} Error:`, {
-		error: errorMessage,
-		error_code: errorCode,
-		itemIndex,
-		timestamp: new Date().toISOString(),
-		context,
-	});
+	// n8n 환경에서 안전하게 로깅
+	try {
+		if (typeof console !== 'undefined' && console.error) {
+			console.error(`🚫 ${context} Error:`, {
+				error: errorMessage,
+				error_code: errorCode,
+				itemIndex,
+				timestamp: new Date().toISOString(),
+				context,
+			});
+		}
+	} catch (error) {
+		// 로깅 실패 시 무시
+	}
 }
 
 export function validateRequiredField(value: unknown, fieldName: string, context: string): void {

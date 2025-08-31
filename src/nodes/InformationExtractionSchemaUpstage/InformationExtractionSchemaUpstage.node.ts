@@ -11,7 +11,7 @@ export class InformationExtractionSchemaUpstage implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Upstage Schema Generation',
 		name: 'informationExtractionSchemaUpstage',
-		icon: 'file:../../assets/icons/upstage_v2.svg',
+		icon: 'file:upstage_v2.svg',
 		group: ['transform', '@n8n/n8n-nodes-langchain'],
 		version: 1,
 		description:

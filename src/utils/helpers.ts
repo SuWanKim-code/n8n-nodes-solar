@@ -18,6 +18,12 @@ export function logAiEvent(
     }
   } catch (error) {
     // Silently fail if telemetry is not available
-    console.debug('Failed to send telemetry event:', event, error);
+    try {
+      if (typeof console !== 'undefined' && console.debug) {
+        console.debug('Failed to send telemetry event:', event, error);
+      }
+    } catch (consoleError) {
+      // 로깅 실패 시 무시
+    }
   }
 }
